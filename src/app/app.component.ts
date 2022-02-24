@@ -11,7 +11,16 @@ export class AppComponent {
   // getName(name:any){
   //   console.log('Function Called')
   // }
-  getFullName(fname:any){
-    console.warn(fname);
+  // getFullName(fname:any){
+  //   console.warn(fname);
+  // }
+  count = 0
+  counter(type:string){
+    if(type == '+'){
+      this.count++;
+    }
+    else{
+      this.count--;
+    }
   }
 }
