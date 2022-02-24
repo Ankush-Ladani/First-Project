@@ -1,3 +1,4 @@
+import { fn } from '@angular/compiler/src/output/output_ast';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'First-Project';
+  // getName(name:any){
+  //   console.log('Function Called')
+  // }
+  getFullName(fname:any){
+    console.warn(fname);
+  }
 }
